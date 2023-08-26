@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 1px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav{
+    background-color: rgb(178, 66, 178);
+    color: white;
+    height: 50px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(234, 224, 248);
+}
+
+.info{
+    font-size: 25px;
+}
+
+.gameInfo{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inforRes{
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 30px;
+    padding: 5px 30px;
+    background-color: rgb(182, 162, 255);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+}
+
+.gameInfo h1{
+    font-size: 35rem;
+}
+
+/* .line{
+    background-color: rgb(78, 5, 225);
+    width: 250rem;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    transform: translate(70rem, 190rem) rotate(135deg);
+} */
+
+@media screen and (max-width: 600px){
+    .gameContainer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .gameInfo{
+        margin-top: 40px;
+    }
+
+    .gameInfo h1{
+        font-size: 22.4rem;
+    }
+
+    .info{
+        font-size: 22.4rem;
+    }
+
+    #reset{
+        margin: 0 20px;
+        padding: 2px 20px;
+        font-size: 25px;
+    }
+
+    .imgBox img{
+        width: 120px;
+    }
+
+    .container{
+        grid-template-rows: repeat(3, 28vw);
+        grid-template-columns: repeat(3, 28vw);
+    }
+
+    .boxtext{
+        font-size: 50px;
+    }
+
+    .gameInfo{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
